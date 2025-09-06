@@ -52,3 +52,5 @@ coverage/
 
 # Arquivos do sistema operacional
 *.swp
+
+*.db
