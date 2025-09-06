@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bazar Online</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <script src="script.js"></script>
+  <body>
+    <header>
+      <h1>Bazar Online</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Início</a></li>
+          <li><a href="#">Produtos</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="produtos">
+      <div class="produto">
+        <img src="camisa.webp" alt="Produto 1" />
+        <h2>Camisa Vintage</h2>
+        <p>R$ 40,00</p>
+        <button onclick="comprar('Camisa Vintage')">Comprar</button>
+      </div>
+      <div class="produto">
+        <img src="calca.webp" alt="Produto 2" />
+        <h2>Calça Jeans</h2>
+        <p>R$ 60,00</p>
+        <button onclick="comprar('Calça Jeans')">Comprar</button>
+      </div>
+      <div class="produto">
+        <img src="bolsa.webp" alt="Produto 3" />
+        <h2>Bolsa Artesanal</h2>
+        <p>R$ 75,00</p>
+        <button onclick="comprar('Bolsa Artesanal')">Comprar</button>
+      </div>
+    </main>
+    <div class="card">
+      <h1>📍 Informações do Bazar</h1>
+      <p><strong>Local:</strong> Odair Martiniano da Silva Mandela</p>
+      <p><strong>Horário:</strong> 8h às 10h</p>
+      <a href="index.html" class="back-btn">⬅ Voltar</a>
+    </div>
+
+    <!-- Carrinho -->
+    <div class="cart" id="cart">
+      <h2>🛒 Seu Carrinho</h2>
+      <ul id="cart-items"></ul>
+      <p class="total">Total: R$ <span id="cart-total">0,00</span></p>
+      <button class="finalizar" onclick="finalizarCompra()">
+        Finalizar Compra
+      </button>
+    </div>
+
+    <!-- Redes Sociais -->
+    <section class="social-links">
+      <a href="https://wa.me/seu-numero" target="_blank">WhatsApp</a>
+      <a href="https://instagram.com/seu-usuario" target="_blank">Instagram</a>
+      <a href="https://facebook.com/seu-usuario" target="_blank">Facebook</a>
+    </section>
+    <!-- Contato -->
+    <section id="contato" class="info-bazar-container">
+      <button class="info-bazar-btn">Fale Conosco</button>
+    </section>
+    <footer>
+      <p>&copy; 2025 Bazar Online. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- JavaScript embutido para garantir funcionamento -->
+    <script>
+      function comprar(produto) {
+        alert("Você comprou: " + produto);
+      }
+    </script>
+  </body>
+</html>
